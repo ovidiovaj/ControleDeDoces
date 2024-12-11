@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControleDeDoces.Views.CadastrarProdutoPage">
+
+	<VerticalStackLayout Padding="20" Spacing="15">
+		<Label Text="Cadastrar Produto"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+		<Entry x:Name="productNameEntry"
+               Placeholder="Nome do Produto" />
+		<Entry x:Name="productPriceEntry"
+               Placeholder="Preço do Produto"
+               Keyboard="Numeric" />
+
+		<Button Text="Salvar"
+                Clicked="OnSalvarClicked" />
+	</VerticalStackLayout>
+</ContentPage>
